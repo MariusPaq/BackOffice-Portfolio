@@ -1,0 +1,99 @@
+html{height: 100%;}
+body{
+  background: linear-gradient(70deg, #e6f3f8, #ead3d7);
+  z-index: -100;
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100%;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+
+#loginCard{margin-top: 10%;}
+
+#disc, #homeDetails, #editDetails, #homeEdit, #homeAdd{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#editDetails{
+  top: 60px;
+}
+
+#listProj{margin-top: 50px;}
+
+.table{
+  background-color: white;
+  padding: 1rem 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid lightgray;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+#thumb{
+  max-height: 100px;
+  max-width: 100px;
+  float: right;
+}
+
+
+
+#thumbHome{
+  max-width: 150px;
+  max-height: 150px;
+}
+
+#projetDetails{
+  margin-top: 30px;
+  background-color: white;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+@media (max-width: 600px){
+  #disc, #homeDetails, #editDetails, #homeEdit, #homeAdd{
+
+  }
+
+  #editDetails{
+    top: 10px;
+    left: 60px;
+  }
+
+  #projetDetails{
+    margin-top: 60px;
+  }
+
+  #addSection,#editSection{
+    margin-top: 60px;
+  }
+
+  .table thead {
+    display: none;
+  }
+  .table tr{
+    display: block;
+    margin-bottom: 40px;
+  }
+  .table td {
+    display: block;
+    text-align: right;
+  }
+  .table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+}
